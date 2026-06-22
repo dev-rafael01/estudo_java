@@ -12,7 +12,10 @@ public class Produto {
         this.nome = nome;
         this.preco = preco;
         this.quantidade = quantidade;
+
+        
     }
+
 
     public String getNome()
     {
