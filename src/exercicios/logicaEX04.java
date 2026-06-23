@@ -5,6 +5,7 @@ public class logicaEX04 {
     private String nome;
     private int Nconta;
     private double saldo;
+   
 
 
     public logicaEX04 (String nome, int Nconta)
@@ -12,13 +13,14 @@ public class logicaEX04 {
         this.nome = nome;
         this.Nconta = Nconta;
         this.saldo = 0.0;
+    
        
     }
     public logicaEX04 (String nome, int Nconta, double depositoInicial)
     {
         this.nome = nome;
         this.Nconta = Nconta;
-        this.saldo = depositoInicial;
+        Deposito(depositoInicial);
        
     }
 
@@ -44,19 +46,18 @@ public class logicaEX04 {
     }
 
 
-   public void depositar(double valor)
+   public void Deposito(double valor)
    {
     
      saldo = saldo + valor;
    }
 
-   public void sacar(double valor)
+   public void Sacar(double valor)
    {
       saldo -= valor + 5.0;
    }
 
-
-
+ 
     public String toString()
     {
         return "Conta: " + Nconta + ", Titular: " + nome + ", Saldo: R$ " + String.format("%.2f", saldo);
