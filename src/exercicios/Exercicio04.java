@@ -1,7 +1,3 @@
-/*
-
-*/
-
 package exercicios;
 import exercicios.logicaEX04;
 import java.util.Locale;
