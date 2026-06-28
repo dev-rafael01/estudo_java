@@ -13,6 +13,7 @@ public class Exercicio07 {
 
         System.out.print("Quantas pessoas seram digitadas? ");
         int numero = sc.nextInt();
+        
 
         
  
@@ -27,11 +28,13 @@ public class Exercicio07 {
             System.out.print("Nome: ");
             sc.nextLine();
             nomes[i] = sc.nextLine();
+
             System.out.print("Idade: ");
             idade[i] = sc.nextInt();
+
             System.out.print("Altura: ");
             altura[i] = sc.nextDouble();
-                   }
+         }
 
          int numerosMenos = 0;
          double alturaTotal = 0;
