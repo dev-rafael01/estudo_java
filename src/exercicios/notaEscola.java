@@ -1,4 +1,4 @@
-package programa;
+package aplication;
 import java.util.Locale;
 import java.util.Scanner;
 
