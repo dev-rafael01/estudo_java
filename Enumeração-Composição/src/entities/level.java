@@ -6,6 +6,7 @@ import entities.nivelTrabalho;
 import java.util.Calendar;
 import entities.HoraContrato;
 
+
 public class level {
 
     private String nome;
@@ -73,7 +74,7 @@ public class level {
         this.contratos.remove(contratos);
     }
 
-    public double renda(Integer ano, Integer mes)
+    public double renda(Integer mes, Integer ano)
     {
         double soma = baseSalario;
 
@@ -82,7 +83,7 @@ public class level {
         {
             calendario.setTime(c.getData());
             int c_ano = calendario.get(Calendar.YEAR);
-            int c_mes = calendario.get(Calendar.MONTH);
+            int c_mes = calendario.get(Calendar.MONTH) + 1 ;
 
             if(ano == c_ano && mes == c_mes)
             {

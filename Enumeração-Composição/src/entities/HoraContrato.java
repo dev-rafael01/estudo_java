@@ -29,11 +29,11 @@ public class HoraContrato {
         this.data = data;
     }
     
-     public double getValorPorHora()
+     public double getvalorPorHora()
     {
         return valorPorHora;
     }
-    public void setValorPorHora(double valorPorHora)
+    public void setvalorPorHora(double valorPorHora)
     {
         this.valorPorHora = valorPorHora;
     }
