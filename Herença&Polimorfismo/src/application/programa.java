@@ -7,33 +7,18 @@ import entities.contaPoupanca;
 public class programa {
     public static void main(String[] args) 
     {
-        conta acc = new conta(1001, "Alex", 0);
-        contaEmpresarial bacc = new contaEmpresarial(1002, "Maria", 0, 500.0);
+        conta acc1 = new conta(1001, "Alex", 1000.0);
 
-        // UPCASTING
-
-        conta acc1 = bacc;
-        conta acc2 = new contaEmpresarial(1003, "Bob" , 0, 200.00);
-        conta acc3 = new contaPoupanca(1004, "Anna", 0, 0.01);
-
-        // DOWNCASTING
-
-        contaEmpresarial acc4 = (contaEmpresarial)acc2;
-        acc4.emprestimo(100.0);
+        acc1.saque(200.0);
+        System.out.println(acc1.getSaldo());
 
 
-        if(acc3 instanceof contaEmpresarial)
-        {
-            contaEmpresarial acc5 = (contaEmpresarial)acc3;
-            acc5.emprestimo(200.0);
-            System.out.println("Emprestimo realizado");
-        }
+        conta acc2 =  new  contaPoupanca(1002, "Maria", 1000.0, 0.01);
+        acc2.saque(200.0);
+        System.out.println(acc2.getSaldo());
 
-        if(acc3 instanceof contaPoupanca)
-        {
-            contaPoupanca acc5 = (contaPoupanca)acc3;
-            acc5.atualizarSaldo();
-            System.out.println("Saldo atualizado.");
-        }
+        conta acc3 = new contaEmpresarial(1003, "Bob", 1000.0 , 500.0);
+        acc3.saque(200.0);
+        System.out.println(acc3.getSaldo());
     }
 }
